@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Guest{% endblock title %}
+
+{% block page_content %}
+<div class="field">
+<h1>Welcome guest</h1>
+   <form method="post">
+       <p>Name</p>
+       <p><input name="name" type="text"></p>
+       <p>Surname</p>
+       <p><input name="surname" type="text"></p>
+       <p>Email</p>
+       <p><input type="email" name="email" type="text"></p>
+       <p>Message</p>
+       <p><textarea rows="10" cols="50" name="post"></textarea></p>
+       <input type="submit" value="Send msg">
+   </form>
+</div>
+
+{% endblock page_content %}

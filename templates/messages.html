@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages</title>
+</head>
+<body>
+    <h4>Messages</h4>
+    {% for Post in msg %}
+        <p>{{ Post.message }}, {{ Post.date }}</p>
+    {% endfor %}
+</body>
+</html>
