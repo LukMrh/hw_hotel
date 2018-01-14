@@ -1,2 +1,2 @@
 # hw_hotel
-gae_hw
+Hw about GAE and datastore
