@@ -51,7 +51,7 @@ class GuestHandler(BaseHandler):
 
         new_entry = Post(name=name.replace("<script>", ""), surname=surname.replace("<script>", ""),
                          email=email.replace("<script>", ""),
-                         message=message.replace("<script>", ""))  # s tem definiramo v bazi
+                         message=message.replace("<script>", "")) 
         new_entry.put()  # s tem vstavimo zapis
 
         return self.redirect_to("main_page")
