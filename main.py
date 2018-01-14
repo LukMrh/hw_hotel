@@ -48,7 +48,7 @@ class GuestHandler(BaseHandler):
 
         if not name:
             name = "Anonymus"
-
+        #against JS injection. It's poor, I know...
         new_entry = Post(name=name.replace("<script>", ""), surname=surname.replace("<script>", ""),
                          email=email.replace("<script>", ""),
                          message=message.replace("<script>", "")) 
